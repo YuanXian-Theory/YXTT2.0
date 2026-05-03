@@ -1,0 +1,12 @@
+-R src YXTT
+
+src/Core/Basics.v
+src/Core/TCSC.v
+src/Core/Axioms.v
+src/Core/SelfReferential.v
+src/Core/UniqueProjection.v
+src/Core/FineStructure.v
+src/Manifolds/T64.v
+src/Physics/HeartField.v
+src/Math/Riemann.v
+src/Consciousness/CoherentState.v
