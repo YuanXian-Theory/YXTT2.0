@@ -1,0 +1,10 @@
+import «YXTT2».Core.Basics
+import «YXTT2».Core.Axioms
+import «YXTT2».Core.TCSC
+import «YXTT2».Core.SelfReferential
+import «YXTT2».Core.UniqueProjection
+import «YXTT2».Core.FineStructure
+
+-- Main entry point for the theory
+def main : IO Unit := do
+  IO.println "YXTT 2.0 Initialized — YuanXian Unified Formal System"
