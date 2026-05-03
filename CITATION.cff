@@ -1,0 +1,15 @@
+---
+
+### 4. `CITATION.cff`
+
+```yaml
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "YXTT 2.0: YuanXian Type Theory 2.0"
+authors:
+  - family-names: "Zhen Yuan"
+    given-names: "Acharya"
+    orcid: "0009-0009-3690-569X"
+date-released: "2026-05-03"
+url: "https://github.com/yuanxian-theory/YXTT2.0"
+doi: "10.5281/zenodo.xxxxxxx"
