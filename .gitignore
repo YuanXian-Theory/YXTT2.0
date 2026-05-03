@@ -1,0 +1,15 @@
+# Lean
+build/
+lake-packages/
+.lean/
+.olean/
+.ilean/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
