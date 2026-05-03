@@ -30,3 +30,17 @@ cd YXTT2.0
 # Build with Lake (Lean build system)
 lake exe cache get
 lake build
+
+
+## Project Structure
+See the full directory layout in the repository.
+Documentation
+•  Language Specification
+•  Axioms Encoding
+•  Architecture
+
+## Applications
+•  High-dimensional self-referential heart field simulation
+•  Precise computation of physical constants
+•  Formal verification of mathematical conjectures (e.g., Riemann Hypothesis)
+•  Modeling of coherent states of consciousness and genetic coding
