@@ -1,4 +1,4 @@
-Require Import YXTT.Core.Axioms.
+Require Import YXTT.Core.laws.
 Require Import YXTT.Manifolds.T64.
 
 (** Unique Projection from T⁶⁴ to M⁴ - Axiom III *)
