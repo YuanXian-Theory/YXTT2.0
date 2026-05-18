@@ -1,4 +1,4 @@
-Require Import YXTT.Core.Axioms.
+Require Import YXTT.Core.laws.
 
 (** Fine Structure Constant Properties *)
 
