@@ -1,5 +1,5 @@
 import YXTT.Core.TCSC
-import YXTT.Core.Axioms
+import YXTT.Core.laws
 
 namespace YXTT
 
