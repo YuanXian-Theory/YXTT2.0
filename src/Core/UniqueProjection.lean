@@ -1,4 +1,4 @@
-import YXTT.Core.Axioms
+import YXTT.Core.laws
 import YXTT.Manifolds.T64
 
 namespace YXTT
