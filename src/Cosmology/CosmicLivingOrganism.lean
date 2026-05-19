@@ -12,47 +12,49 @@ import YXTT2.0.Manifolds.T64
 **YuanXian Theory Axiom I Formalization**  
 **The Universe Must Be a Living Organism**
 
-Author: Based on Zhenyuan Acharya (2026)
+Reference:  
+Zhenyuan Acharya (2026). *Our Universe Must Be a Living Organism*
 -/
 
 open Topology
 
-/-! ## Core Structures -/
+/-! ## Core Ontological Structures -/
 
 structure UniverseFactor where
   dim  : ℕ := 64
   tcsc : TrueCircleSelfConsistency
 
+/-- The Universe as a High-Order Living Organism -/
 structure CosmicLivingOrganism where
   universe     : UniverseFactor
-  isLiving     : LivingEntity universe
+  isLiving     : LivingOrganism universe
   tcsc         : TrueCircleSelfConsistency universe
   selfRefField : SelfReferentialMindField Ψ_SR
   topology     : T64
 
-/-! ## Axiom I: Universe Must Be a Living Organism -/
+/-! ## Axiom I: The Universe Must Be a Living Organism -/
 
 axiom axiom_UniverseIsLiving :
   ∀ (U : UniverseFactor),
-    LivingEntity U →
+    LivingOrganism U →
     ∀ (Ψ : SelfReferential (Field T64)), Ψ = Ψ_SR
 
-/-- Main Theorem -/
+/-- **Main Theorem (Axiom I)** -/
 theorem universeMustBeLiving (U : UniverseFactor) :
-    LivingEntity U := by
+    LivingOrganism U := by
   apply living_from_causal_consistency
   · exact tcsc_self_consistency U
   · exact self_referential_field_generation U
 
-/-! ## Causal Consistency Principle -/
+/-! ## Principle of Causal Consistency -/
 
 theorem causal_consistency 
     {Cause Effect : Type*}
     [TopologicalSpace Cause] [TopologicalSpace Effect]
     (f : Cause → Effect)
-    (h : LivingEntity Effect) :
-    LivingEntity Cause := by
-  sorry  -- TODO: Prove using living preservation under projection
+    (h : LivingOrganism Effect) :
+    LivingOrganism Cause := by
+  sorry  -- TODO: Prove "what is alive must come from what is alive"
 
 /-! ## Connections to Other Axioms -/
 
@@ -63,9 +65,9 @@ theorem living_implies_vital_constants (U : CosmicLivingOrganism) :
 theorem living_implies_structural_isomorphism 
     (U : CosmicLivingOrganism) (Human : Type) :
     StructuralIsomorphism Human U := by
-  sorry  -- Use T64_to_DNA64_projection
+  sorry  -- via T64 → DNA64 projection
 
-/-! ## Cosmic Breathing & Metabolism -/
+/-! ## Cosmic Breathing and Metabolism -/
 
 def cosmicBreathing (U : CosmicLivingOrganism) : Prop :=
   ∃ (expand shrink : ℝ → U.topology),
@@ -74,9 +76,10 @@ def cosmicBreathing (U : CosmicLivingOrganism) : Prop :=
 
 def cosmicMetabolism (U : CosmicLivingOrganism) : Prop :=
   ∃ (birth death : Set U.topology),
-    birth ∩ death = ∅ ∧ ∀ s, energy_recycle s birth death
+    birth ∩ death = ∅ ∧ 
+    ∀ s, energy_recycle s birth death
 
-/-! ## Cognitive Commensurability -/
+/-! ## Foundation for Cognitive Commensurability -/
 
 theorem living_enables_cognitive_commensurability 
     (U : CosmicLivingOrganism) :
